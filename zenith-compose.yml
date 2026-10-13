@@ -1,6 +1,9 @@
 services:
   app:
-    image: ghcr.io/logykk/zenith-pr840-e2e-20261013:zenith-pending
+    image: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:4a38b00e47e1926785bd96b6beefdea986aff6c5e09c5172c5a005e722d9e7c8"
+    x-zenith-image:
+      source: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:4a38b00e47e1926785bd96b6beefdea986aff6c5e09c5172c5a005e722d9e7c8"
+      last_pin: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:4a38b00e47e1926785bd96b6beefdea986aff6c5e09c5172c5a005e722d9e7c8"
     ports:
       - "8080"
     environment:
