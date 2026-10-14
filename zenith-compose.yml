@@ -1,6 +1,9 @@
 services:
   app:
-    image: ghcr.io/logykk/zenith-pr840-e2e-20261013:zenith-pending
+    image: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:f1b1becfbabbf18f5be207b91dac0258a60c908cc964f02dc312ced5413ff8f9"
+    x-zenith-image:
+      source: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:f1b1becfbabbf18f5be207b91dac0258a60c908cc964f02dc312ced5413ff8f9"
+      last_pin: "ghcr.io/logykk/zenith-pr840-e2e-20261013@sha256:f1b1becfbabbf18f5be207b91dac0258a60c908cc964f02dc312ced5413ff8f9"
     command: ["python3", "app.py"]
     environment:
       PORT: "8080"
